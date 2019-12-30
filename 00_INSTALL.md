@@ -10,6 +10,7 @@ yum install MariaDB-server MariaDB-client galera-4
 # prepare log directory
 sudo mkdir -p /var/log/mariadb
 sudo chown -R mysql:mysql /var/log/mariadb
+rm -rf /var/log/mariadb/*
 
 # charcater
 ```conf:/etc/my.cnf.d/server.cnf
