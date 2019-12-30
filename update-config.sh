@@ -10,7 +10,10 @@ create_config_file() {
 }
 
 export MARIADB_SELF_NODE_NAME=${MARIADB_SELF_NODE}
-export MARIADB_SELF_NODE_ADDRESS=`hostname -I | sed 's/^ *\| *$//'`
+export MARIADB_SELF_NODE_ADDRESS=`hostname -I | tr -d ' '`
+
+echo "MARIADB_SELF_NODE_NAME:$MARIADB_SELF_NODE_NAME"
+echo "MARIADB_SELF_NODE_ADDRESS:$MARIADB_SELF_NODE_ADDRESS"
 
 
 # backup
