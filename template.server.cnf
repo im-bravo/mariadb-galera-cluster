@@ -45,7 +45,7 @@ innodb_doublewrite=1
 bind-address=0.0.0.0
 #
 # Optional setting
-wsrep_slave_threads=2
+wsrep_slave_threads=1
 #innodb_flush_log_at_trx_commit=0
 
 
